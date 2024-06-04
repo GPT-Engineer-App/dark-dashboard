@@ -1,23 +1,23 @@
 import React from 'react';
-import { Box, Flex, Text, Input, Icon, VStack, HStack, SimpleGrid } from '@chakra-ui/react';
-import { FaSearch, FaChartPie, FaCalendarAlt, FaChartBar, FaUser, FaWallet, FaClipboardList, FaUsers } from 'react-icons/fa';
+import { Box, Flex, Text, Input, Icon, VStack, SimpleGrid } from '@chakra-ui/react';
+import { FaSearch, FaWallet, FaClipboardList, FaUsers } from 'react-icons/fa';
 
 const Index = () => {
   return (
-    <Box bg="#1E1E2D" p="20px" minH="100vh">
+    <Box bg="#1E1E2D" p="20px" minH="100vh" fontFamily="Arial, sans-serif">
       <Flex>
         {/* Sidebar */}
         <Box w="80px" bg="#14141B" p="20px" borderRadius="20px 0 0 20px">
           <VStack spacing="20px">
-            <Icon as={FaWallet} boxSize="24px" color="white" />
-            <Icon as={FaClipboardList} boxSize="24px" color="white" />
-            <Icon as={FaUsers} boxSize="24px" color="white" />
+            <Icon as={FaWallet} boxSize="24px" color="white" _hover={{ transform: 'scale(1.1)', color: 'gray.300' }} />
+            <Icon as={FaClipboardList} boxSize="24px" color="white" _hover={{ transform: 'scale(1.1)', color: 'gray.300' }} />
+            <Icon as={FaUsers} boxSize="24px" color="white" _hover={{ transform: 'scale(1.1)', color: 'gray.300' }} />
           </VStack>
         </Box>
 
         <Box flex="1" ml="20px">
           {/* Header */}
-          <Flex h="60px" bg="#14141B" p="20px" align="center" justify="space-between">
+          <Flex h="60px" bg="#14141B" p="20px" align="center" justify="center">
             <Input
               placeholder="Search..."
               w="300px"
@@ -28,46 +28,46 @@ const Index = () => {
               fontSize="14px"
               color="white"
             />
-            <Icon as={FaSearch} color="white" />
+            <Icon as={FaSearch} color="white" ml="10px" />
           </Flex>
 
           {/* Main Content */}
           <Box p="20px">
             {/* Greeting Section */}
-            <Text fontSize="24px" color="white" mb="20px">
+            <Text fontSize="24px" fontWeight="bold" color="white" mb="20px" lineHeight="32px">
               Welcome to the Dashboard
             </Text>
 
             {/* Statistics Cards */}
             <SimpleGrid columns={3} spacing="20px" mb="20px">
-              <Box w="250px" h="150px" bg="turquoise" borderRadius="10px" p="20px">
-                <Text fontSize="18px" fontWeight="bold" color="#333333">
+              <Box w="250px" h="150px" bg="#00C4B4" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="#333333" lineHeight="24px">
                   Weekly Balance
                 </Text>
-                <Text fontSize="14px" color="#666666">
+                <Text fontSize="14px" fontWeight="medium" color="#666666" lineHeight="20px">
                   $5,000
                 </Text>
               </Box>
-              <Box w="250px" h="150px" bg="yellow" borderRadius="10px" p="20px">
-                <Text fontSize="18px" fontWeight="bold" color="#333333">
+              <Box w="250px" h="150px" bg="#FFEB3B" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="#333333" lineHeight="24px">
                   Orders In Line
                 </Text>
-                <Text fontSize="14px" color="#666666">
+                <Text fontSize="14px" fontWeight="medium" color="#666666" lineHeight="20px">
                   15
                 </Text>
               </Box>
-              <Box w="250px" h="150px" bg="pink" borderRadius="10px" p="20px">
-                <Text fontSize="18px" fontWeight="bold" color="#333333">
+              <Box w="250px" h="150px" bg="#FFCDD2" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="#333333" lineHeight="24px">
                   New Clients
                 </Text>
-                <Text fontSize="14px" color="#666666">
+                <Text fontSize="14px" fontWeight="medium" color="#666666" lineHeight="20px">
                   8
                 </Text>
               </Box>
             </SimpleGrid>
 
             {/* Sales Chart */}
-            <Box w="500px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px">
+            <Box w="500px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
               <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
                 Sales Chart
               </Text>
@@ -75,7 +75,7 @@ const Index = () => {
             </Box>
 
             {/* Calendar */}
-            <Box w="250px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px">
+            <Box w="250px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
               <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
                 Calendar
               </Text>
@@ -83,7 +83,7 @@ const Index = () => {
             </Box>
 
             {/* Pie Chart and Details */}
-            <Box w="300px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px">
+            <Box w="300px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
               <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
                 Pie Chart
               </Text>
@@ -94,7 +94,7 @@ const Index = () => {
             </Box>
 
             {/* Weekly Sales Bar Chart */}
-            <Box w="250px" h="150px" bg="#14141B" borderRadius="10px" p="20px" mb="20px">
+            <Box w="250px" h="150px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
               <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
                 Weekly Sales
               </Text>
@@ -102,7 +102,7 @@ const Index = () => {
             </Box>
 
             {/* Customer Details */}
-            <Box w="500px" h="150px" bg="#14141B" borderRadius="10px" p="20px" mb="20px">
+            <Box w="500px" h="150px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
               <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
                 Customer Details
               </Text>
