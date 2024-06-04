@@ -39,28 +39,28 @@ const Index = () => {
             </Text>
 
             {/* Statistics Cards */}
-            <SimpleGrid columns={3} spacing="20px" mb="20px">
+            <SimpleGrid columns="auto-fill" minChildWidth="250px" spacing="20px" mb="20px">
               <Box w="250px" h="150px" bg="#00C4B4" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-                <Text fontSize="18px" fontWeight="bold" color="#333333" lineHeight="24px">
+                <Text fontSize="18px" fontWeight="bold" color="#333333" mb="10px" lineHeight="24px">
                   Weekly Balance
                 </Text>
-                <Text fontSize="14px" fontWeight="medium" color="#666666" lineHeight="20px">
+                <Text fontSize="14px" fontWeight="normal" color="#666666" lineHeight="20px">
                   $5,000
                 </Text>
               </Box>
               <Box w="250px" h="150px" bg="#FFEB3B" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-                <Text fontSize="18px" fontWeight="bold" color="#333333" lineHeight="24px">
+                <Text fontSize="18px" fontWeight="bold" color="#333333" mb="10px" lineHeight="24px">
                   Orders In Line
                 </Text>
-                <Text fontSize="14px" fontWeight="medium" color="#666666" lineHeight="20px">
+                <Text fontSize="14px" fontWeight="normal" color="#666666" lineHeight="20px">
                   15
                 </Text>
               </Box>
               <Box w="250px" h="150px" bg="#FFCDD2" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-                <Text fontSize="18px" fontWeight="bold" color="#333333" lineHeight="24px">
+                <Text fontSize="18px" fontWeight="bold" color="#333333" mb="10px" lineHeight="24px">
                   New Clients
                 </Text>
-                <Text fontSize="14px" fontWeight="medium" color="#666666" lineHeight="20px">
+                <Text fontSize="14px" fontWeight="normal" color="#666666" lineHeight="20px">
                   8
                 </Text>
               </Box>
