@@ -34,7 +34,14 @@ const Index = () => {
           {/* Main Content */}
           <Box p="20px">
             {/* Greeting Section */}
-            <Text fontSize="24px" fontWeight="bold" color="white" mb="20px" lineHeight="32px">
+            <Text
+              fontSize="24px"
+              fontWeight="bold"
+              color="white"
+              mb="20px"
+              lineHeight="32px"
+              _hover={{ fontSize: "56px" }}
+            >
               Welcome to the Dashboard
             </Text>
 
