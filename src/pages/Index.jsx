@@ -17,7 +17,7 @@ const Index = () => {
 
         <Box flex="1" ml="20px">
           {/* Header */}
-          <Flex h="60px" bg="#14141B" p="20px" align="center" justify="center">
+          <Flex h="60px" bg="#14141B" p="20px" align="center" justify="space-between">
             <Input
               placeholder="Search..."
               w="300px"
@@ -111,7 +111,7 @@ const Index = () => {
           </Box>
 
           {/* Footer */}
-          <Flex h="40px" bg="#14141B" p="10px 20px" align="center">
+          <Flex h="40px" bg="#14141B" p="10px 20px" align="center" justify="center">
             <Text fontSize="12px" color="gray.500">
               © 2023 Dashboard. All rights reserved.
             </Text>
