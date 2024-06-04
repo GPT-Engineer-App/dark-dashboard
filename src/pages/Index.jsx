@@ -66,48 +66,51 @@ const Index = () => {
               </Box>
             </SimpleGrid>
 
-            {/* Sales Chart */}
-            <Box w="500px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-              <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
-                Sales Chart
-              </Text>
-              <Box h="200px" w="100%" bg="gray.700" />
-            </Box>
+            {/* Grid Container for Main Sections */}
+            <SimpleGrid columns="auto-fill" minChildWidth="250px" spacing="20px">
+              {/* Sales Chart */}
+              <Box w="100%" h="300px" bg="#14141B" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
+                  Sales Chart
+                </Text>
+                <Box h="200px" w="100%" bg="gray.700" />
+              </Box>
 
-            {/* Calendar */}
-            <Box w="250px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-              <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
-                Calendar
-              </Text>
-              <Box h="200px" w="100%" bg="gray.700" />
-            </Box>
+              {/* Calendar */}
+              <Box w="100%" h="300px" bg="#14141B" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
+                  Calendar
+                </Text>
+                <Box h="200px" w="100%" bg="gray.700" />
+              </Box>
 
-            {/* Pie Chart and Details */}
-            <Box w="300px" h="300px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-              <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
-                Pie Chart
-              </Text>
-              <Box h="150px" w="150px" bg="gray.700" mb="20px" />
-              <Text fontSize="14px" color="white">
-                Details about the pie chart.
-              </Text>
-            </Box>
+              {/* Pie Chart and Details */}
+              <Box w="100%" h="300px" bg="#14141B" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
+                  Pie Chart
+                </Text>
+                <Box h="150px" w="150px" bg="gray.700" mb="20px" />
+                <Text fontSize="14px" color="white">
+                  Details about the pie chart.
+                </Text>
+              </Box>
 
-            {/* Weekly Sales Bar Chart */}
-            <Box w="250px" h="150px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-              <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
-                Weekly Sales
-              </Text>
-              <Box h="100px" w="100%" bg="gray.700" />
-            </Box>
+              {/* Weekly Sales Bar Chart */}
+              <Box w="100%" h="150px" bg="#14141B" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
+                  Weekly Sales
+                </Text>
+                <Box h="100px" w="100%" bg="gray.700" />
+              </Box>
 
-            {/* Customer Details */}
-            <Box w="500px" h="150px" bg="#14141B" borderRadius="10px" p="20px" mb="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
-              <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
-                Customer Details
-              </Text>
-              <Box h="30px" w="100%" bg="gray.700" />
-            </Box>
+              {/* Customer Details */}
+              <Box w="100%" h="150px" bg="#14141B" borderRadius="10px" p="20px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+                <Text fontSize="18px" fontWeight="bold" color="white" mb="20px">
+                  Customer Details
+                </Text>
+                <Box h="30px" w="100%" bg="gray.700" />
+              </Box>
+            </SimpleGrid>
           </Box>
 
           {/* Footer */}
